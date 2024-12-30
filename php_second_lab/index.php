@@ -1,19 +1,19 @@
 <!-- 1-  Search for how to make \n work in browser. -->
-    <!-- <?php
+<!-- <?php
     $text = "HELLO CMS!!\nPHP!";
     echo nl2br($text);
     ?> -->
 
- 
+
 <!-- 2-  Display $_SERVER in readable format. -->
-    <!-- <?php
+<!-- <?php
         echo "<pre>";
         print_r($_SERVER);
         echo "</pre>";
     ?> -->
- 
+
 <!-- 3- Try any three functions from String or Arrays built in. -->
-    <!-- <?php
+<!-- <?php
     echo strlen("HELLO CMS!!");
 
 
@@ -34,7 +34,7 @@
     with value = 25 in index =3
     with value = 10 in index =2
     after that sort it in a reverse order (highest to lowest). -->
-    <!-- <?php
+<!-- <?php
         $index_array= [12,45,10,25];
         echo "the sum of the array is " , array_sum($index_array);
         echo "<br>";
@@ -52,7 +52,7 @@
  
     array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40) in 
     ************ -->
-    <?php
+<?php
         $associative_array = array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40);
         // a) ascending order sort by value
         asort($associative_array);
@@ -76,9 +76,3 @@
         echo "</pre>";
 
     ?>
-
-
-
-
-
-
