@@ -56,14 +56,14 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Edit Form</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container mt-5">
-        <h2 class="text-center">Registration Form</h2>
+        <h2 class="text-center">Edit the User data</h2>
         <p>Please fill this form and submit to add user record to the database.</p>
         <!-- make a form and redirect the input data to the server side -->
         <form method="post" action="edit_logic.php">
