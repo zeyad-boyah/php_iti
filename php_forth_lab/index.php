@@ -44,6 +44,7 @@
             
             <button type="submit" class="btn btn-primary w-100">Register</button>
         </form>
+        <a href="view_all.php" class="btn btn-primary mt-3 w-100">view all users</a>
         <?php
         // Display error message if "error" query parameter is set
         if (isset($_GET['error']) && $_GET['error'] == 'invalid_email') {

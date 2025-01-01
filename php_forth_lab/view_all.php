@@ -14,14 +14,14 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center">User Data</h2>
-        <table class="table table-bordered table-striped " style="border-radius: 20px; overflow: hidden;">
+        <table class="table table-bordered table-striped " style="border-radius: 10px; overflow: hidden;">
             <thead class="table-dark">
                 <tr>
                     <th>#</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Gender</th>
-                    <th>Status</th>
+                    <th>mail status</th>
                     <th>action</th>
                 </tr>
             </thead>
@@ -29,8 +29,10 @@
                 <?php
                     include 'view_logic.php';
                 ?>
+                
             </tbody>
         </table>
+        <a href="index.php" class="btn btn-primary mt-3 w-100">Register a new user</a>
     </div>
 </body>
 </html>

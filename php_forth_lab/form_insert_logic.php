@@ -55,6 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-// Redirect to the form page after processing
-// header("Location: index.php");
+// Redirect to the view page after processing
+header("Location: view_all.php");
 exit;

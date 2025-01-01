@@ -27,15 +27,24 @@ if (mysqli_num_rows($result) > 0) {
         echo '<td>' . ($row["mail_status"] ? 'yes' : 'no') . '</td>';
         // buttons for manipulating the data later
         echo '<td>
-            <a href="view.php?id=' . htmlspecialchars($row["user_id"]) . '" class="btn btn-info btn-sm  rounded-circle btn-lg" title="View" >
-                <i class="fas fa-eye" style="color: white;"></i>
-            </a>
-                <a href="edit.php?id=' . htmlspecialchars($row["user_id"]) . '" class="btn btn-warning btn-sm" title="Edit">
-                    <i class="fas fa-edit" style="color: white;"></i>
-                </a>
-                <a href="delete.php?id=' . htmlspecialchars($row["user_id"]) . '" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(\'Are you sure?\')">
-                    <i class="fas fa-trash-alt"></i>
-                </a>
+                <form method="POST" action="view_one_record_logic.php">
+                    <input type="hidden" name="user_id" value="' . htmlspecialchars($row["user_id"]) . '">
+                    <button type="submit" class="btn btn-info btn-sm rounded-circle btn-lg" title="View">
+                        <i class="fas fa-eye" style="color: white;"></i>
+                    </button>
+                </form> 
+                <form method="POST" action="edit.php">
+                    <input type="hidden" name="user_id" value="' . htmlspecialchars($row["user_id"]) . '">
+                    <button type="submit" class="btn btn-warning btn-sm" title="Edit">
+                        <i class="fas fa-edit" style="color: white;"></i>
+                    </button>
+                </form>
+                <form method="POST" action="delete.php" onsubmit="return confirm(\'Are you sure?\')">
+                    <input type="hidden" name="user_id" value="' . htmlspecialchars($row["user_id"]) . '">
+                    <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </form>
             </td>';
         echo '</tr>';
     }
@@ -43,5 +52,4 @@ if (mysqli_num_rows($result) > 0) {
     echo '<tr><td colspan="5" class="text-center">No records found</td></tr>';
 }
 
-// Close the connection
 mysqli_close($conn);
