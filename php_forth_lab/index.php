@@ -38,8 +38,8 @@
             </div>
             
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="agree" name ="agree" required>
-                <label class="form-check-label" for="agree">Receive E-mails from us.</label>
+                <input type="checkbox" class="form-check-input" id="mail_status" name ="mail_status" value= "1">
+                <label class="form-check-label" for="mail_status">Receive E-mails from us.</label>
             </div>
             
             <button type="submit" class="btn btn-primary w-100">Register</button>
@@ -48,6 +48,9 @@
         // Display error message if "error" query parameter is set
         if (isset($_GET['error']) && $_GET['error'] == 'invalid_email') {
             echo "<p style='color: red;'>Invalid email format. Please enter a valid email address.</p>";
+        }
+        if (isset($_GET['error']) && $_GET['error'] == 'missing_data'){
+            echo "<p style='color: red;'>missing name or gender or email status. Please don't edit the html.</p>";
         }
         ?>
     </div>
