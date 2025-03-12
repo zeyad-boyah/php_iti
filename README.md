@@ -27,13 +27,13 @@ This repository contains four PHP projects developed as part of my learning jour
 
 - **[Project 4: Comprehensive CRUD Application](./php_fourth_lab/index.php)**  
   *Overview:*  
-  This is a full-featured web application that implements all CRUD (Create, Read, Update, Delete) operations using the POST method. It is built with PHP and styled with Bootstrap to ensure a modern, responsive frontend. The project is divided into multiple files for handling different operations such as user registration, data insertion, updates, deletion, and data retrieval.
+  This is a full-featured web application that implements all CRUD (Create, Read, Update, Delete) operations using the POST method. It is built with PHP and styled with Bootstrap. The project is divided into multiple files for handling different operations such as user registration, data insertion, updates, deletion, and data retrieval.
 
   **Key Features:**  
   - **CRUD Operations:**  
     Implements complete CRUD functionality across multiple PHP scripts.
   - **Frontend Integration:**  
-    Uses Bootstrap for a modern look and feel, ensuring mobile responsiveness.
+    Uses Bootstrap for mobile responsiveness.
   - **Error Handling:**  
     Validates form data and displays error messages for issues like invalid email formats or missing data.
 
