@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) > 0) {
         echo '<td>' . htmlspecialchars($row["user_gender"]) . '</td>';
         echo '<td>' . ($row["mail_status"] ? 'yes' : 'no') . '</td>';
         // buttons for manipulating the data later
-        echo '<td>
+        echo '<td class="d-flex gap-2">
                 <form method="POST" action="view_one_record_logic.php">
                     <input type="hidden" name="user_id" value="' . htmlspecialchars($row["user_id"]) . '">
                     <button type="submit" class="btn btn-info btn-sm rounded-circle btn-lg" title="View">
